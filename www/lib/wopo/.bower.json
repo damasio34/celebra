@@ -1,0 +1,28 @@
+{
+  "name": "wopo",
+  "version": "0.1.5",
+  "description": "Framework com serviços básicos",
+  "main": "src/wopo.js",
+  "authors": [
+    "Darlan Damasio <darlan@damasio34.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.6"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "homepage": "https://github.com/damasio34/wopo",
+  "_release": "0.1.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.5",
+    "commit": "6dcf47f67ff3ce4f6a0fcc554990f414c4bba901"
+  },
+  "_source": "git://github.com/damasio34/wopo.git",
+  "_target": "~0.1.5",
+  "_originalSource": "wopo",
+  "_direct": true
+}
