@@ -1,5 +1,1 @@
-(function(angular) {
-
-	angular.module('celebra.services', []);
-
-})(angular);
+angular.module('celebra.services', []);

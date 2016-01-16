@@ -6,31 +6,43 @@
         // Rotas ou states
         $stateProvider
 
-        // Login
-        .state('login', {
-            url: "/login",            
-            templateUrl: "views/login/login.html",
-            controller: 'LoginController'
-        })
+            // Login
+            .state('login', {
+                url: "/login",            
+                templateUrl: "views/login/login.html",
+                controller: 'LoginController'
+            })
+            
+            .state('cadastrar', {
+                url: '/cadastrar',
+                controller: 'LoginIncluirController',
+                templateUrl: 'views/login/cadastrar.html'
+            })
 
-        // App
-        .state('app', {
-    		url: "/app",
-    		abstract: true,
-    		templateUrl: "views/app.html",
-    		controller: 'AppController'
-        })
+            .state('recuperarSenha', {
+                url: '/recuperarSenha',
+                controller: 'RecuperarSenhaController',
+                templateUrl: 'views/login/recuperar-senha.html'
+            })
 
-        // Dashboard
-        .state('app.dashboard', {
-            url:'/dashboard',
-            views: {
-    	        'mainContent' :{
-            		templateUrl:'views/dashboard/dashboard.html',
-            		controller:'DashboardController'
-    	        }
-          	}
-        })
+            // App
+            .state('app', {
+                url: "/app",
+                abstract: true,
+                templateUrl: "views/app.html",
+                controller: 'AppController'
+            })
+
+            // Dashboard
+            .state('app.dashboard', {
+                url:'/dashboard',
+                views: {
+                    'mainContent' :{
+                        templateUrl:'views/dashboard/dashboard.html',
+                        controller:'DashboardController'
+                    }
+                }
+            })
 
     });
 
