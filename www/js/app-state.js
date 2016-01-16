@@ -43,6 +43,17 @@
                     }
                 }
             })
+            
+            // Cultos
+            .state('app.cultos', {
+                url:'/cultos',
+                views: {
+                    'mainContent' :{
+                        templateUrl:'views/culto/listar.html',
+                        controller:'CultoListarController'
+                    }
+                }
+            })
 
     });
 
