@@ -11,9 +11,10 @@
       	</div>
 
 	 	<ion-list>
-            <ion-item class="item item-avatar" ng-repeat="culto in cultos | orderBy: 'data'" item="culto" href="#/app/culto/{{item.objectId}}">
-                <h2>{{culto.nome}}</h2>
-                <p>{{culto.data}}</p>
+            <ion-item class="item" ng-repeat="culto in cultos | orderBy: 'data'" item="culto" href="#/app/culto/{{item.objectId}}">
+                <!--<h2>{{culto.nome}}</h2>-->
+                <h2>Nome do culto</h2>
+                <p>{{culto.data.iso | date:'MM/dd/yyyy - HH:mm'}}</p>
             </ion-item>
         </ion-list>
     
