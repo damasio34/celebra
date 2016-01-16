@@ -1,4 +1,4 @@
-var app = angular.module('esteticApp.controllers');
+var app = angular.module('celebra.controllers');
 
 app.controller('LoginIncluirController', function($scope, $state, LoginService) {
 

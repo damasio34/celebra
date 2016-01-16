@@ -1,6 +1,6 @@
 (function(angular) {
 	
-	var controllers = angular.module('esteticApp.controllers');
+	var controllers = angular.module('celebra.controllers');
 	controllers.controller('RecuperarSenhaController', function($scope, $state, LoginService) {
 	
 		$scope.Model = {
