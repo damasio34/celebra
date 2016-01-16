@@ -9,7 +9,7 @@
 		};
 
 		$scope.Sair = function() { 
-			LoginService.logOut().success(function() {
+			LoginService.logout().success(function() {
 				$state.go('login');
 			});
 		};

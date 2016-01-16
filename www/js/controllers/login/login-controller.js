@@ -13,7 +13,7 @@
 
 		$scope.signIn = function (form) {
 			if(form.$valid) {
-				LoginService.efetuarLogin($scope.Model).success(function(){
+				LoginService.login($scope.Model).success(function(){
 					$state.go('app.dashboard');
 				});
 			};
