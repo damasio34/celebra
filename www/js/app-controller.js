@@ -14,8 +14,6 @@
 			});
 		};
 
-		// LoginService.getUsuario();
-
 	});
 
 })(angular);

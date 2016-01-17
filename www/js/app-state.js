@@ -53,7 +53,9 @@
                         controller:'CultoListarController'
                     }
                 }
-            })
+            });
+            
+        $urlRouterProvider.otherwise('/app/dashboard');
 
     });
 
