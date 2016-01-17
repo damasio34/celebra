@@ -5,27 +5,20 @@
 
 <ion-content>
 
-	<form name="cadastrarForm" novalidate="" ng-submit="signUp(cadastrarForm)">
+	<form name="formuario" novalidate="" ng-submit="salvar(formuario)">
 		<div class="list list-inset">
 			<label class="item item-input item-stacked-label">
-		    	<span class="input-label">Usuário</span>
-		    	<input type="text" placeholder="usuario" ng-model="Model.usuario">
+		    	<span class="input-label">Data</span>
+		    	<input type="date" placeholder="01/01/2016" ng-model="Model.dia">
 		  	</label>
-			  <label class="item item-input item-stacked-label">
+            <label class="item item-input item-stacked-label">
 		    	<span class="input-label">Senha</span>
-		    	<input type="password" placeholder="12345" ng-model="Model.senha">
-		  	</label>
-			<label class="item item-input item-stacked-label">
-		    	<span class="input-label">Nome</span>
-		    	<input type="text" placeholder="Maria" ng-model="Model.nome">
-		  	</label>
-		  	<label class="item item-input item-stacked-label">
-		    	<span class="input-label">Email</span>
-		    	<input type="email" placeholder="contato@email.com" ng-model="Model.email">
-		  	</label>			
+		    	<input type="time" placeholder="19:00" ng-model="Model.hora">
+		  	</label>	
 		</div>
         <button class="button button-block button-positive" type="submit">
-            Cadastrar
+            Salvar
         </button>
 	</form>
+    
 </ion-content>

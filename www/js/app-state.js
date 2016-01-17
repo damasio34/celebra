@@ -54,8 +54,8 @@
                     }
                 }
             })
-            .state('app.incluirCulto', {
-                url:'/culto',
+            .state('app.culto_incluir', {
+                url:'/culto/incluir',
                 views: {
                     'mainContent' :{
                         templateUrl:'views/culto/culto-incluir-editar-view.html',

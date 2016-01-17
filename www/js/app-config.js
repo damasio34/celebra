@@ -5,6 +5,7 @@
     app.config(function($ionicConfigProvider) {
 	  	$ionicConfigProvider.backButton.previousTitleText(false);
 	  	$ionicConfigProvider.backButton.text('').icon('ion-android-arrow-back');
+        $ionicConfigProvider.views.forwardCache(false);
 	});
     
     app.config(function ($httpProvider) {
