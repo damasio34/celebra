@@ -9,27 +9,27 @@
             // Login
             .state('login', {
                 url: "/login",            
-                templateUrl: "views/login/login.html",
+                templateUrl: "views/login/login-view.html",
                 controller: 'LoginController'
             })
             
             .state('cadastrar', {
                 url: '/cadastrar',
                 controller: 'LoginIncluirController',
-                templateUrl: 'views/login/cadastrar.html'
+                templateUrl: 'views/login/login-incluir-editar-view.html'
             })
 
             .state('recuperarSenha', {
                 url: '/recuperarSenha',
                 controller: 'RecuperarSenhaController',
-                templateUrl: 'views/login/recuperar-senha.html'
+                templateUrl: 'views/login/login-recuperar-senha-view.html'
             })
 
             // App
             .state('app', {
                 url: "/app",
                 abstract: true,
-                templateUrl: "views/app.html",
+                templateUrl: "views/app-view.html",
                 controller: 'AppController'
             })
 
@@ -38,19 +38,28 @@
                 url:'/dashboard',
                 views: {
                     'mainContent' :{
-                        templateUrl:'views/dashboard/dashboard.html',
+                        templateUrl:'views/dashboard/dashboard-view.html',
                         controller:'DashboardController'
                     }
                 }
             })
             
             // Cultos
-            .state('app.cultos', {
-                url:'/cultos',
+            .state('app.culto', {
+                url:'/culto',
                 views: {
                     'mainContent' :{
-                        templateUrl:'views/culto/listar.html',
+                        templateUrl:'views/culto/culto-listar-view.html',
                         controller:'CultoListarController'
+                    }
+                }
+            })
+            .state('app.incluirCulto', {
+                url:'/culto',
+                views: {
+                    'mainContent' :{
+                        templateUrl:'views/culto/culto-incluir-editar-view.html',
+                        controller:'CultoIncluirController'
                     }
                 }
             });
